@@ -48,7 +48,7 @@ public class Puerto {
 
     public int BuscarContenedoresPorPais(String pais)
     {
-        int contador = 0;
+        int contador =0;
 
         for (int i = 0; i < 3; i++) {
 
