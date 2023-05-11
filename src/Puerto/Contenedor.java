@@ -10,6 +10,9 @@ public class Contenedor {
     private String nombreEnvia;
     private String nombreRecibe;
     //---------------------------------------------CONSTRUCTORES----------------------------------------------------------
+    public Contenedor(){
+
+    }
     public Contenedor(int id) {
         this.prioridad = 3; //3 será la prioridad por defecto
         this.id = id; //id no puede ser null en ninguna circunstancia por eso este es el constructor más pequeño que se puede hacer

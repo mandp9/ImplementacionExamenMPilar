@@ -86,6 +86,21 @@ public class Hub {
         }
         return cAux;
     }
+    public Contenedor datosContenedorPorPrioridad (int prio){
+        Contenedor cAux = new Contenedor(0);
+        boolean encontrado = false;
+        if(prio>0) {
+            for (int i = 0; i < cc.length; i++) {
+                for (int j = 0; j < cc[i].length && !encontrado; j++) {
+                    if (cc[i][j] != null && cc[i][j].getPrioridad() == prio) {
+                        cAux = cc[i][j];
+                        encontrado = true;
+                    }
+                }
+            }
+        }
+        return cAux;
+    }
     public int cantidadContPais (String pais){
         int contador = 0;
         for (int i = 0; i < cc.length; i++) {
