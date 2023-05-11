@@ -77,11 +77,11 @@ public class Puerto {
         Hub aux2 = new Hub();
         for (int i = 0; i < 3; i++) {
                 aux2 = hub[i];
-                aux [c]= aux2.datosContenedorPorPrioridad(prio);
+                aux [c] = aux2.datosContenedorPorPrioridad(prio);
                 c++;
         }
-        for (int j = 0; j < c; j++) {
-            cadena = "" + aux[j] + " ";
+        for (int j = 0; j <= c; j++) {
+            cadena = aux[j] + ", ";
         }
         return cadena;
     }
