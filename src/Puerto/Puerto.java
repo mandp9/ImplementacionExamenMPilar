@@ -81,7 +81,7 @@ public class Puerto {
                 c++;
         }
         for (int j = 0; j <= c; j++) {
-            cadena = aux[j] + ", ";
+            cadena = aux[j] + "  ";
         }
         return cadena;
     }
